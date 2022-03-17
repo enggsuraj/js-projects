@@ -1,0 +1,50 @@
+.projects {
+  color: var(--textColor);
+  margin-top: 150px;
+}
+
+.projects h2 {
+  font-size: 32px;
+}
+
+.projects p {
+  margin-top: 10px;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.card {
+  padding: 1rem;
+  flex-basis: 49%;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  background-color: var(--primary-dark);
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.projects h3 {
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
