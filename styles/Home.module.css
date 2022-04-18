@@ -1,6 +1,7 @@
 .main {
   color: var(--textColor);
   position: relative;
+  height: 100vh;
 }
 
 .desktopMenu {
@@ -26,8 +27,11 @@
 }
 
 .home {
-  margin-top: 5rem;
   display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
 }
 
 .home h1 {
@@ -83,7 +87,9 @@
   }
 
   .home {
+    position: relative;
     flex-direction: column;
+    margin-top: 100px;
   }
 
   .right {
